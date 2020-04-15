@@ -29,8 +29,8 @@ _supported_fs generic
 _supported_os Linux
 
 _require_test
-_requires_renameat2
-_require_test_symlinks
+_requires_renameat2 noreplace
+_require_symlinks
 
 rename_dir=$TEST_DIR/$$
 mkdir $rename_dir
